@@ -58,24 +58,24 @@ const card1btn = getId("card-1-btn");
 
 card1btn.addEventListener("click", function () {
   const userBalanceValue = parseFloat(getInnerText("account-balance"));
-  const card1Inuput = parseFloat(getValue("card-1-input"));
 
-  if (isNaN(card1Inuput)) {
+  const card1Input = parseFloat(getValue("card-1-input"));
+
+  if (isNaN(card1Input) || card1Input > userBalanceValue || !card1Input) {
     alert("invalid input");
     return;
   }
 
-  const totalBalance = userBalanceValue - card1Inuput;
+  const totalBalance = userBalanceValue - card1Input;
 
   document.getElementById("account-balance").innerText = totalBalance;
-
-  console.log({ userBalanceValue, card1Inuput, totalBalance });
+  document.getElementById("balance-card-1").innerText = card1Input;
 
   const item = document.createElement("div");
   item.className = "border-2 rounded-md p-5 mb-5";
 
   item.innerHTML = ` 
-    <p class= "text-base font-extrabold mb-2">${card1Inuput} Taka is Donated for flood-2024 at Nohakhali, Bangladesh </p>
+    <p class= "text-base font-extrabold mb-2">${card1Input} Taka is Donated for flood-2024 at Nohakhali, Bangladesh </p>
     <p class= "text-xs font-normal mb-2">${new Date().toString()}</p>
   `;
 
