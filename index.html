@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PH-ASSIGN-5</title>
+    <!-- cdn -->
+
+    <!-- tailwind & daisy ui -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- /tailwind & daisy ui -->
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--/ google fonts -->
+
+    <!--/cdn -->
+    <style>
+      .lexend-font {
+        font-family: "Lexend", sans-serif;
+        font-weight: 300;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body class="lexend-font">
+    <!-- navbar -->
+    <nav class="w-full md:w-[90%] md:mx-auto gap-2 my-3">
+      <div
+        class="flex md:justify-between justify-center md:flex-row gap-2 md:gap-0"
+      >
+        <!-- left -->
+        <div>
+          <button class="btn bg-[#b4f461] text-xl font-semibold px-9">
+            Blog
+          </button>
+        </div>
+        <!-- /left -->
+        <!-- center -->
+        <div class="flex items-center gap-3">
+          <span>
+            <img src="./assets/logo.png" alt="" />
+          </span>
+          <span>
+            <h3 class="text-xl font-semibold">Donate Bangladesh</h3>
+          </span>
+        </div>
+        <!-- /center -->
+
+        <!-- right -->
+        <div class="flex items-center gap-3">
+          <span>
+            <img src="./assets/coin.png" alt="" />
+          </span>
+          <span>
+            <p id="account-balance" class="text-xl font-bold">98600 BDT</p>
+          </span>
+        </div>
+        <!-- /right -->
+      </div>
+    </nav>
+  </body>
+</html>
