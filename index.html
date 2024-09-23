@@ -45,13 +45,13 @@
         <section class="bg-gray-100 h-24 md:flex md:items-center">
           <nav class="w-full md:w-[90%] md:mx-auto gap-2">
             <div
-              class="flex md:justify-between justify-center md:flex-row gap-2 md:gap-0"
+              class="flex md:justify-between justify-between md:flex-row gap-2 md:gap-0"
             >
               <!-- left -->
               <div>
                 <button
                   id="blog-toggle"
-                  class="btn bg-[#b4f461] text-xl font-semibold"
+                  class="btn bg-[#b4f461] text-sm md:text-xl font-semibold"
                 >
                   Blog
                 </button>
@@ -62,19 +62,21 @@
                 <span>
                   <img src="./assets/logo.png" alt="" />
                 </span>
-                <span>
-                  <h3 class="text-xl font-semibold">Donate Bangladesh</h3>
+                <span class="hidden md:inline-block">
+                  <h3 class="text-sm md:text-xl font-semibold">
+                    Donate Bangladesh
+                  </h3>
                 </span>
               </div>
               <!-- /center -->
 
               <!-- right -->
-              <div class="flex items-center gap-3">
+              <div class="flex items-center md:gap-3">
                 <span>
                   <img src="./assets/coin.png" alt="" />
                 </span>
                 <span>
-                  <p id="account-balance" class="text-xl font-bold">
+                  <p id="account-balance" class="text-sm md:text-xl font-bold">
                     10000 BDT
                   </p>
                 </span>
@@ -87,11 +89,11 @@
         <!-- toggle btn -->
         <div class="w-90% mx-auto my-5 bg-white">
           <div class="flex justify-center">
-            <div class="flex justify-between gap-5 -translate-x-8">
+            <div class="flex justify-between gap-5 md:-translate-x-8">
               <div>
                 <button
                   id="donate"
-                  class="btn text-black bg-[#b4f461] px-5 font-semibold text-xl"
+                  class="btn text-black bg-[#b4f461] text-sm md:text-xl md:px-5 font-semibold"
                 >
                   Donation
                 </button>
@@ -99,7 +101,7 @@
               <div>
                 <button
                   id="history"
-                  class="btn text-gray-500 px-5 font-semibold text-xl"
+                  class="btn text-gray-500 md:px-5 font-semibold text-sm md:text-xl"
                 >
                   History
                 </button>
@@ -122,7 +124,7 @@
             <!-- card-1 -->
 
             <div
-              class="grid grid-cols-2 border-2 rounded-xl border-gray-200 p-5 gap-5 mb-5"
+              class="grid grid-cols-1 md:grid-cols-2 border-2 rounded-xl border-gray-200 p-5 gap-5 mb-5"
             >
               <!-- item-1 -->
               <div>
@@ -133,7 +135,7 @@
               <!-- item-2 -->
               <div class="flex flex-col gap-3">
                 <div
-                  class="w-[25%] flex gap-2 items-center bg-gray-200 p-2 rounded-md"
+                  class="md:w-[25%] flex flex-row gap-2 items-center bg-gray-200 p-2 rounded-md"
                 >
                   <span><img src="./assets/coin.png" alt="" /></span>
                   <span id="balance-card-1">0 BDT</span>
@@ -176,7 +178,7 @@
             <!-- card-2 -->
 
             <div
-              class="grid grid-cols-2 border-2 rounded-xl border-gray-200 p-5 gap-5 mb-5"
+              class="grid grid-cols-1 md:grid-cols-2 border-2 rounded-xl border-gray-200 p-5 gap-5 mb-5"
             >
               <!-- item-1 -->
               <div>
@@ -186,7 +188,7 @@
 
               <!-- item-2 -->
               <div class="flex flex-col gap-1">
-                <div class="w-[25%] flex gap-2 bg-gray-200 p-2 rounded-md">
+                <div class="md:w-[25%] flex gap-2 bg-gray-200 p-2 rounded-md">
                   <span><img src="./assets/coin.png" alt="" /></span>
                   <span id="balance-card-2">600 BDT</span>
                 </div>
@@ -231,7 +233,7 @@
             <!-- card-3 -->
 
             <div
-              class="grid grid-cols-2 border-2 rounded-xl border-gray-200 p-5 gap-5 mb-5"
+              class="grid grid-cols-1 md:grid-cols-2 border-2 rounded-xl border-gray-200 p-5 gap-5 mb-5"
             >
               <!-- item-1 -->
               <div>
@@ -242,7 +244,7 @@
               <!-- item-2 -->
               <div class="flex flex-col gap-3">
                 <div
-                  class="w-[25%] flex gap-2 items-center bg-gray-200 p-2 rounded-md"
+                  class="md:w-[25%] flex gap-2 items-center bg-gray-200 p-2 rounded-md"
                 >
                   <span><img src="./assets/coin.png" alt="" /></span>
                   <span id="balance-card-3">2400 BDT</span>
@@ -327,7 +329,6 @@
 
     <!-- modal ends -->
 
-    <script src="./js/scroll.js"></script>
     <script src="./js/functionalityMain.js"></script>
   </body>
 </html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Blog</title>
     <!-- cdn -->
 
     <!-- tailwind & daisy ui -->
@@ -40,17 +40,17 @@
   <body class="lexend-font">
     <div id="container">
       <!-- navbar -->
-      <div class="sticky top-0 h-32 bg-white">
+      <div class="sticky top-0 h-32 bg-white z-10">
         <section class="bg-gray-100 h-24 md:flex md:items-center">
           <nav class="w-full md:w-[90%] md:mx-auto gap-2">
             <div
-              class="flex md:justify-between justify-center md:flex-row gap-2 md:gap-0"
+              class="flex md:justify-between justify-between md:flex-row gap-2 md:gap-0"
             >
               <!-- left -->
               <div>
                 <button
                   id="home-toggle"
-                  class="btn bg-[#b4f461] text-xl font-semibold"
+                  class="btn bg-[#b4f461] text-sm md:text-xl font-semibold"
                 >
                   Home
                 </button>
@@ -61,8 +61,10 @@
                 <span>
                   <img src="./assets/logo.png" alt="" />
                 </span>
-                <span>
-                  <h3 class="text-xl font-semibold">Donate Bangladesh</h3>
+                <span class="hidden md:inline-block">
+                  <h3 class="text-sm md:text-xl font-semibold">
+                    Donate Bangladesh
+                  </h3>
                 </span>
               </div>
               <!-- /center -->
@@ -73,7 +75,7 @@
                   <img src="./assets/coin.png" alt="" />
                 </span>
                 <span>
-                  <p id="account-balance" class="text-xl font-bold">
+                  <p id="account-balance" class="text-sm md:text-xl font-bold">
                     10000 BDT
                   </p>
                 </span>
@@ -86,53 +88,55 @@
 
       <!-- main -->
       <main class="w-90% mx-auto my-5 p-9 bg-white">
-        <div class="my-5 p-5">
-          <h1 class="text-4xl font-extrabold">Important FAQ</h1>
-        </div>
-        <div
-          class="collapse collapse-arrow bg-base-200 my-5 bg-white border-2 border-gray-200 rounded-2xl"
-        >
-          <input type="radio" name="my-accordion-2" checked="checked" />
-          <div class="collapse-title text-xl font-medium">
-            What is the Document Object Model (DOM)?
+        <div>
+          <div class="my-5 p-5">
+            <h1 class="text-4xl font-extrabold">Important FAQ</h1>
           </div>
-          <div class="collapse-content">
-            <p>hello</p>
+          <div
+            class="collapse collapse-arrow bg-base-200 my-5 bg-white border-2 border-gray-200 rounded-2xl"
+          >
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              What is the Document Object Model (DOM)?
+            </div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
           </div>
-        </div>
-        <div
-          class="collapse collapse-arrow bg-base-200 my-5 bg-white border-2 border-gray-200 rounded-2xl"
-        >
-          <input type="radio" name="my-accordion-2" />
-          <div class="collapse-title text-xl font-medium">
-            How do you select an element from the DOM?
+          <div
+            class="collapse collapse-arrow bg-base-200 my-5 bg-white border-2 border-gray-200 rounded-2xl"
+          >
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">
+              How do you select an element from the DOM?
+            </div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
           </div>
-          <div class="collapse-content">
-            <p>hello</p>
+          <div
+            class="collapse collapse-arrow bg-base-200 my-5 bg-white border-2 border-gray-200 rounded-2xl"
+          >
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">
+              How do you manipulate an element's attributes and styles using the
+              DOM?
+            </div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
           </div>
-        </div>
-        <div
-          class="collapse collapse-arrow bg-base-200 my-5 bg-white border-2 border-gray-200 rounded-2xl"
-        >
-          <input type="radio" name="my-accordion-2" />
-          <div class="collapse-title text-xl font-medium">
-            How do you manipulate an element's attributes and styles using the
-            DOM?
-          </div>
-          <div class="collapse-content">
-            <p>hello</p>
-          </div>
-        </div>
-        <div
-          class="collapse collapse-arrow bg-base-200 my-5 bg-white border-2 border-gray-200 rounded-2xl"
-        >
-          <input type="radio" name="my-accordion-2" />
-          <div class="collapse-title text-xl font-medium">
-            What is event delegation in the context of the DOM, and why is it
-            useful?
-          </div>
-          <div class="collapse-content">
-            <p>hello</p>
+          <div
+            class="collapse collapse-arrow bg-base-200 my-5 bg-white border-2 border-gray-200 rounded-2xl"
+          >
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">
+              What is event delegation in the context of the DOM, and why is it
+              useful?
+            </div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
           </div>
         </div>
       </main>
