@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- cdn -->
+
+    <!-- tailwind & daisy ui -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- /tailwind & daisy ui -->
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--/ google fonts -->
+
+    <!--/cdn -->
+    <style>
+      .lexend-font {
+        font-family: "Lexend", sans-serif;
+        font-weight: 300;
+        font-size: 1rem;
+      }
+      /* #b4f461 */
+    </style>
+  </head>
+  <body class="lexend-font">
+    <div id="container">
+      <!-- navbar -->
+      <div class="sticky top-0 h-32 bg-white">
+        <section class="bg-gray-100 h-24 md:flex md:items-center">
+          <nav class="w-full md:w-[90%] md:mx-auto gap-2">
+            <div
+              class="flex md:justify-between justify-center md:flex-row gap-2 md:gap-0"
+            >
+              <!-- left -->
+              <div>
+                <button
+                  id="home-toggle"
+                  class="btn bg-[#b4f461] text-xl font-semibold"
+                >
+                  Home
+                </button>
+              </div>
+              <!-- /left -->
+              <!-- center -->
+              <div class="flex items-center gap-3">
+                <span>
+                  <img src="./assets/logo.png" alt="" />
+                </span>
+                <span>
+                  <h3 class="text-xl font-semibold">Donate Bangladesh</h3>
+                </span>
+              </div>
+              <!-- /center -->
+
+              <!-- right -->
+              <div class="flex items-center gap-3">
+                <span>
+                  <img src="./assets/coin.png" alt="" />
+                </span>
+                <span>
+                  <p id="account-balance" class="text-xl font-bold">
+                    10000 BDT
+                  </p>
+                </span>
+              </div>
+              <!-- /right -->
+            </div>
+          </nav>
+        </section>
+      </div>
+
+      <!-- main -->
+      <main class="w-90% mx-auto my-5 p-9 bg-white">
+        <div class="my-5 p-5">
+          <h1 class="text-4xl font-extrabold">Important FAQ</h1>
+        </div>
+        <div
+          class="collapse collapse-arrow bg-base-200 my-5 bg-white border-2 border-gray-200 rounded-2xl"
+        >
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            What is the Document Object Model (DOM)?
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div
+          class="collapse collapse-arrow bg-base-200 my-5 bg-white border-2 border-gray-200 rounded-2xl"
+        >
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            How do you select an element from the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div
+          class="collapse collapse-arrow bg-base-200 my-5 bg-white border-2 border-gray-200 rounded-2xl"
+        >
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            How do you manipulate an element's attributes and styles using the
+            DOM?
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div
+          class="collapse collapse-arrow bg-base-200 my-5 bg-white border-2 border-gray-200 rounded-2xl"
+        >
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            What is event delegation in the context of the DOM, and why is it
+            useful?
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./js/blogFunctionality.js"></script>
+  </body>
+</html>
