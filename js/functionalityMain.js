@@ -65,8 +65,7 @@ const card1btn = getId("card-1-btn");
 
 card1btn.addEventListener("click", function () {
   const userBalanceValue = parseFloat(getInnerText("account-balance"));
-
-  const card1Input = parseFloat(getValue("card-1-input"));
+  const card1Input = getValue("card-1-input");
 
   if (
     isNaN(card1Input) ||
@@ -79,9 +78,9 @@ card1btn.addEventListener("click", function () {
     return;
   }
 
-  const totalBalance = userBalanceValue - card1Input;
+  const totalBalance = userBalanceValue - parseFloat(card1Input);
   const card1Finalbalance =
-    parseFloat(getInnerText("balance-card-1")) + card1Input;
+    parseFloat(getInnerText("balance-card-1")) + parseFloat(card1Input);
 
   document.getElementById("account-balance").innerText = totalBalance;
   document.getElementById("balance-card-1").innerText = card1Finalbalance;
@@ -108,7 +107,7 @@ const card2Input = getId("card-2-btn");
 
 card2Input.addEventListener("click", function () {
   const userBalanceValue = parseFloat(getInnerText("account-balance"));
-  const card2Inputvalue = parseFloat(getValue("card-2-input"));
+  const card2Inputvalue = getValue("card-2-input");
 
   if (
     isNaN(card2Inputvalue) ||
@@ -121,9 +120,9 @@ card2Input.addEventListener("click", function () {
     return;
   }
 
-  const totalBalance = userBalanceValue - card2Inputvalue;
+  const totalBalance = userBalanceValue - parseFloat(card2Inputvalue);
   const card2Finalbalance =
-    parseFloat(getInnerText("balance-card-2")) + card2Inputvalue;
+    parseFloat(getInnerText("balance-card-2")) + parseFloat(card2Inputvalue);
 
   document.getElementById("account-balance").innerText = totalBalance;
   document.getElementById("balance-card-2").innerText = card2Finalbalance;
@@ -151,7 +150,7 @@ const card3Input = getId("card-3-btn");
 
 card3Input.addEventListener("click", function () {
   const userBalanceValue = parseFloat(getInnerText("account-balance"));
-  const card3Inputvalue = parseFloat(getValue("card-3-input"));
+  const card3Inputvalue = getValue("card-3-input");
 
   if (
     isNaN(card3Inputvalue) ||
@@ -164,9 +163,9 @@ card3Input.addEventListener("click", function () {
     return;
   }
 
-  const totalBalance = userBalanceValue - card3Inputvalue;
+  const totalBalance = userBalanceValue - parseFloat(card3Inputvalue);
   const card3Finalbalance =
-    parseFloat(getInnerText("balance-card-3")) + card3Inputvalue;
+    parseFloat(getInnerText("balance-card-3")) + parseFloat(card3Inputvalue);
 
   document.getElementById("account-balance").innerText = totalBalance;
   document.getElementById("balance-card-3").innerText = card3Finalbalance;
