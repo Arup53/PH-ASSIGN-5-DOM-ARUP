@@ -68,7 +68,13 @@ card1btn.addEventListener("click", function () {
 
   const card1Input = parseFloat(getValue("card-1-input"));
 
-  if (isNaN(card1Input) || card1Input > userBalanceValue || !card1Input) {
+  if (
+    isNaN(card1Input) ||
+    card1Input > userBalanceValue ||
+    !card1Input ||
+    card1Input < 0 ||
+    card1Input === 0
+  ) {
     alert("invalid input");
     return;
   }
@@ -107,7 +113,9 @@ card2Input.addEventListener("click", function () {
   if (
     isNaN(card2Inputvalue) ||
     card2Inputvalue > userBalanceValue ||
-    !card2Inputvalue
+    !card2Inputvalue ||
+    card2Inputvalue < 0 ||
+    card2Inputvalue === 0
   ) {
     alert("invalid input");
     return;
@@ -148,7 +156,9 @@ card3Input.addEventListener("click", function () {
   if (
     isNaN(card3Inputvalue) ||
     card3Inputvalue > userBalanceValue ||
-    !card3Inputvalue
+    !card3Inputvalue ||
+    card3Inputvalue < 0 ||
+    card3Inputvalue === 0
   ) {
     alert("invalid input");
     return;
