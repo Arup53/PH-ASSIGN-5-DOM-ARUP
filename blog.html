@@ -38,109 +38,155 @@
     </style>
   </head>
   <body class="lexend-font">
-    <div id="container">
-      <!-- navbar -->
-      <div class="sticky top-0 h-32 bg-white z-10">
-        <section class="bg-gray-100 h-24 md:flex md:items-center">
-          <nav class="w-full md:w-[90%] md:mx-auto gap-2">
-            <div
-              class="flex md:justify-between justify-between md:flex-row gap-2 md:gap-0"
-            >
-              <!-- left -->
-              <div>
-                <button
-                  id="home-toggle"
-                  class="btn bg-[#b4f461] text-sm md:text-xl font-semibold"
+    <!-- navbar -->
+    <div class="sticky top-0 h-[40%] backdrop-blur-xl bg-white/30 z-50">
+      <section class="h-24 md:flex md:items-center">
+        <nav class="w-full md:w-[90%] md:mx-auto gap-2">
+          <div
+            class="flex md:justify-between justify-between md:flex-row gap-2 md:gap-0"
+          >
+            <!-- left -->
+            <div>
+              <button
+                id="home-toggle"
+                class="btn bg-[#b4f461] text-sm md:text-xl font-semibold"
+              >
+                Home
+              </button>
+            </div>
+            <!-- /left -->
+            <!-- center -->
+            <div class="flex items-center gap-3">
+              <span>
+                <img src="./assets/logo.png" alt="" />
+              </span>
+              <span class="hidden md:inline-block">
+                <h3 class="text-sm md:text-xl font-semibold">
+                  Donate Bangladesh
+                </h3>
+              </span>
+            </div>
+            <!-- /center -->
+
+            <!-- right -->
+            <div class="flex items-center md:gap-3">
+              <span>
+                <img src="./assets/coin.png" alt="" />
+              </span>
+              <span>
+                <p
+                  id="account-balance-blog"
+                  class="text-sm md:text-xl font-bold"
                 >
-                  Home
-                </button>
-              </div>
-              <!-- /left -->
-              <!-- center -->
-              <div class="flex items-center gap-3">
-                <span>
-                  <img src="./assets/logo.png" alt="" />
-                </span>
-                <span class="hidden md:inline-block">
-                  <h3 class="text-sm md:text-xl font-semibold">
-                    Donate Bangladesh
-                  </h3>
-                </span>
-              </div>
-              <!-- /center -->
+                  10000 BDT
+                </p>
+              </span>
+            </div>
+            <!-- /right -->
+          </div>
+        </nav>
+      </section>
+    </div>
 
-              <!-- right -->
-              <div class="flex items-center gap-3">
-                <span>
-                  <img src="./assets/coin.png" alt="" />
-                </span>
-                <span>
-                  <p id="account-balance" class="text-sm md:text-xl font-bold">
-                    10000 BDT
-                  </p>
-                </span>
-              </div>
-              <!-- /right -->
-            </div>
-          </nav>
-        </section>
-      </div>
-
-      <!-- main -->
-      <main class="w-90% mx-auto my-5 p-9 bg-white">
-        <div>
-          <div class="my-5 p-5">
-            <h1 class="text-4xl font-extrabold">Important FAQ</h1>
+    <!-- main -->
+    <main class="w-90% mx-auto my-5 p-9 bg-white">
+      <div>
+        <div class="my-5 p-5">
+          <h1 class="text-4xl font-extrabold">Important FAQ</h1>
+        </div>
+        <div
+          class="collapse collapse-arrow bg-base-200 my-5 bg-white border-2 border-gray-200 rounded-2xl"
+        >
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            What is the Document Object Model (DOM)?
           </div>
-          <div
-            class="collapse collapse-arrow bg-base-200 my-5 bg-white border-2 border-gray-200 rounded-2xl"
-          >
-            <input type="radio" name="my-accordion-2" checked="checked" />
-            <div class="collapse-title text-xl font-medium">
-              What is the Document Object Model (DOM)?
-            </div>
-            <div class="collapse-content">
-              <p>hello</p>
-            </div>
-          </div>
-          <div
-            class="collapse collapse-arrow bg-base-200 my-5 bg-white border-2 border-gray-200 rounded-2xl"
-          >
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">
-              How do you select an element from the DOM?
-            </div>
-            <div class="collapse-content">
-              <p>hello</p>
-            </div>
-          </div>
-          <div
-            class="collapse collapse-arrow bg-base-200 my-5 bg-white border-2 border-gray-200 rounded-2xl"
-          >
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">
-              How do you manipulate an element's attributes and styles using the
-              DOM?
-            </div>
-            <div class="collapse-content">
-              <p>hello</p>
-            </div>
-          </div>
-          <div
-            class="collapse collapse-arrow bg-base-200 my-5 bg-white border-2 border-gray-200 rounded-2xl"
-          >
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">
-              What is event delegation in the context of the DOM, and why is it
-              useful?
-            </div>
-            <div class="collapse-content">
-              <p>hello</p>
-            </div>
+          <div class="collapse-content">
+            <p>
+              Technically, Document Object Model is a data structure,
+              particularly a tree structure, that a web browser creates when it
+              receives an HTML text. The browser provides some API's to modify
+              this structure and the results is shown live.
+            </p>
           </div>
         </div>
-      </main>
-    </div>
+        <div
+          class="collapse collapse-arrow bg-base-200 my-5 bg-white border-2 border-gray-200 rounded-2xl"
+        >
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            How do you select an element from the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+              To select a DOM elements, there are various methods. Some of them
+              are give below
+            </p>
+            <ul>
+              <li>1. .getElementById() : only select single elements</li>
+              <li>2. .querySelector() : only select single elements</li>
+              <li>
+                3. .getElementByClassName() : select all elements under that
+                class name
+              </li>
+              <li>
+                4. .getElementsByTagName() : select all elements under that tag
+                name
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="collapse collapse-arrow bg-base-200 my-5 bg-white border-2 border-gray-200 rounded-2xl"
+        >
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            How do you manipulate an element's attributes and styles using the
+            DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+              It is a method of JavaScript where any parent element has access
+              to its child element event object through event bubbling i.e.
+              event propagates from child to its parent until root element of
+              the DOM.
+            </p>
+            <p>Some usefulness are given below-</p>
+            <ul>
+              <li>
+                1. To handle same event for multiple elements (for example,
+                multiple buttons) on parent element that ultimately reduce
+                spaghetti codes
+              </li>
+              <li>
+                2. New child elements added by api or other methods don't need
+                individual event listener for event handling
+              </li>
+              <li>3. Make Codebase more readable.</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="collapse collapse-arrow bg-base-200 my-5 bg-white border-2 border-gray-200 rounded-2xl"
+        >
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            What is event delegation in the context of the DOM, and why is it
+            useful?
+          </div>
+          <div class="collapse-content">
+            <p>
+              For changing attributes methods like- .getAttribute(),
+              setAttribute(), removeAttribute() etc can be used.
+            </p>
+            <p>
+              For changing classes, first classList property needs to select and
+              then method like- .add(), remove(), toggle() etc can be used.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <script src="./js/blogFunctionality.js"></script>
   </body>
